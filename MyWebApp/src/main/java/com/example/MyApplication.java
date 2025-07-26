@@ -14,6 +14,11 @@ public class MyApplication {
 String home(){
     return "hello world";
 }
+
+@RequestMapping("/welcome")
+String getWelcomeMessage(){
+    return "Welcome To Our Website";
+}
     public static void main(String args[]){
         SpringApplication.run(MyApplication.class, args);
     }
